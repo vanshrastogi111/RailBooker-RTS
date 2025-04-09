@@ -1,109 +1,127 @@
-# Railway Reservation System
+# 🚆 RailBooker - Railway Reservation System
 
-This project is a web-based Railway Reservation System that allows users to view train details, book tickets, and manage their profiles. It includes both user-facing pages and administrative functionalities.
+**RailBooker** is a web-based Railway Reservation System that allows users to view train information, book tickets, and manage their profiles. The system also includes an admin interface to manage train listings.
 
-## Project Structure
+🔗 **Live Site**: [http://railbooker.devbyabhishek.infinityfreeapp.com/](http://railbooker.devbyabhishek.infinityfreeapp.com/)  
+📂 **GitHub Repository**: [https://github.com/Abhishek-soni6904/RailBooker-RTS](https://github.com/Abhishek-soni6904/RailBooker-RTS)
 
-The project is organized as follows:
+---
 
-```
-.
-├── add_train.php          # Admin page to add train details
-├── index.php              # Homepage
-├── login.php              # User login page
-├── logout.php             # User logout script
-├── profile.php            # User profile page
-├── railway.sql            # Database schema
-├── tickets.php            # Ticket booking page
-├── train-details.php      # Train details page
-├── trains.php             # Train listing page
-├── assets/                # Static assets (images)
-│   ├── default.jpg
-│   ├── duronto.jpg
-│   ├── express.avif
-│   ├── hero.webp
-│   ├── shatabdi.jpg
-│   └── superfast.jpg
-├── css/                   # Stylesheets
-│   ├── add_train.css
-│   ├── global.css
-│   ├── index.css
-│   ├── login.css
-│   ├── tickets.css
-│   ├── train-details.css
-│   └── trains.css
-├── include/               # PHP includes
-│   ├── _add_train.php
-│   ├── _login.php
-│   ├── _profile.php
-│   ├── _tickets.php
-│   ├── _train-details.php
-│   ├── _trains.php
-│   ├── db.php             # Database connection script
-│   ├── footer.php         # Footer component
-│   └── nav.php            # Navigation bar component
-├── script/                # JavaScript files
-│   ├── add_train.js
-│   ├── global.js
-│   ├── login.js
-│   ├── train-details.js
-│   └── trains.js
-```
+## ✨ Features
 
-## Features
+- 🔐 **User Authentication** – Secure login and logout
+- 🚄 **Train Listings** – Browse all available trains
+- 📄 **Train Details** – Detailed view of each train
+- 🎟️ **Ticket Booking** – Reserve seats for trains
+- 👤 **User Profile** – Manage personal details
+- 🛠️ **Admin Panel** – Add or manage train data
 
-- **User Authentication**: Login and logout functionality.
-- **Train Listings**: View all available trains.
-- **Train Details**: View detailed information about a specific train.
-- **Ticket Booking**: Book tickets for available trains.
-- **User Profile**: Manage user information.
-- **Admin Panel**: Add new train details.
+---
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd railway-reservation-system
-   ```
-
-2. Import the database:
-   - Open your database management tool (e.g., phpMyAdmin).
-   - Create a new database (e.g., `railway`).
-   - Import the `railway.sql` file into the database.
-
-3. Configure the database connection:
-   - Open `include/db.php`.
-   - Update the database credentials:
-     ```php
-     $servername = "localhost";
-     $username = "root";
-     $password = "";
-     $dbname = "railway";
-     ```
-
-4. Start a local server:
-   - Use XAMPP, WAMP, or any PHP server to host the project.
-   - Place the project folder in the server's root directory (e.g., `htdocs` for XAMPP).
-
-5. Access the application:
-   - Open your browser and navigate to `http://localhost/railway-reservation-system`.
-
-## Usage
-
-- **Homepage**: View the available trains and navigate to other sections.
-- **Login**: Log in to access personalized features.
-- **Train Details**: Click on a train to view its details.
-- **Book Tickets**: Use the ticket booking page to reserve seats.
-- **Admin Panel**: Add new trains using the admin interface.
-
-## Technologies Used
+## 🛠️ Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: PHP
 - **Database**: MySQL
 - **Server**: Apache (via XAMPP/WAMP)
 
-## Screenshots
+---
 
-_Add screenshots of your application here to showcase its features._
+## 🧑‍💻 Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/Abhishek-soni6904/RailBooker-RTS
+   cd RailBooker-RTS
+   ```
+
+2. **Import the Database**
+
+   - Open phpMyAdmin
+   - Create a database named `railway`
+   - Import `railway.sql`
+
+3. **Configure DB Connection**  
+   Edit `include/db.php`:
+
+   ```php
+   $servername = "localhost";
+   $username = "root";
+   $password = "";
+   $dbname = "railway";
+   ```
+
+4. **Run Locally**
+   - Place the folder in your server directory (e.g., `htdocs`)
+   - Start Apache & MySQL using XAMPP/WAMP
+   - Open `http://localhost/RailBooker-RTS` in your browser
+
+---
+
+## 🚀 Usage
+
+- Browse trains from the homepage
+- Log in to view profile or book tickets
+- View train details by clicking on a train
+- Use the ticket form to make bookings
+- Admin can add new trains via the admin page
+
+---
+
+## 📸 Screenshots
+
+**Homepage**  
+![Homepage](assets/screenshots/home.png)
+
+**Train Listings Page**  
+![Train Listings](assets/screenshots/trains.png)
+
+**Train Details Page**  
+![Train Details](assets/screenshots/TrainDetails.png)
+
+**Ticket Booking Page**  
+![Ticket Booking](assets/screenshots/Tickets.png)
+
+**User Profile Page**  
+![User Profile](assets/screenshots/Profile.png)
+
+**Admin Panel – Add New Train**  
+![Admin Panel](assets/screenshots/addNewTrain.png)
+
+---
+
+## 📁 Project Structure
+
+```
+.
+├── index.php              # Homepage
+├── login.php              # User login
+├── logout.php             # Logout script
+├── profile.php            # User profile
+├── tickets.php            # Book tickets
+├── train-details.php      # Train details
+├── trains.php             # Train listings
+├── add_train.php          # Admin: Add train
+├── railway.sql            # Database schema
+│
+├── assets/                # Static images
+├── css/                   # Stylesheets
+├── script/                # JavaScript files
+├── include/               # PHP logic, components
+│   ├── db.php             # DB connection
+│   ├── nav.php, footer.php
+│   └── *_*.php            # Logic handlers
+```
+
+---
+
+## Contact📩
+
+For any queries or support, feel free to reach out:
+
+- **👤 Name**: Abhishek Soni
+- **📧 Email**: abhisheksoni6904@gmail.com
+- **🔗 GitHub**: [Abhishek-soni6904](https://github.com/Abhishek-soni6904)
+- **📸 Instagram**: [Instagram Profile](https://www.instagram.com/_abhishek._.soni_/)
+- **💼 LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/abhishek-soni-662028331/)
