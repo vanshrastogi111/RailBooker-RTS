@@ -4,6 +4,7 @@
 
 🔗 **Live Site**: [http://railbooker.devbyabhishek.infinityfreeapp.com/](http://railbooker.devbyabhishek.infinityfreeapp.com/)  
 📂 **GitHub Repository**: [https://github.com/Abhishek-soni6904/RailBooker-RTS](https://github.com/Abhishek-soni6904/RailBooker-RTS)
+🗝️ **admin login**: gmail: admin@gmai.com password: 123
 
 ---
 
