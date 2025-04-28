@@ -122,7 +122,7 @@
 For any queries or support, feel free to reach out:
 
 - **👤 Name**: Abhishek Soni
-- **📧 Email**: abhisheksoni6904@gmail.com
+- **📧 Email**: abhisheks6904@gmail.com
 - **🔗 GitHub**: [Abhishek-soni6904](https://github.com/Abhishek-soni6904)
 - **📸 Instagram**: [Instagram Profile](https://www.instagram.com/_abhishek._.soni_/)
 - **💼 LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/abhishek-soni-662028331/)
