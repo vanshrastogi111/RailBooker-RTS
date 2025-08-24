@@ -1,8 +1,8 @@
 <?php
 // Database connection
-$host = 'localhost';
+$host = 'db';
 $username = 'root';  
-$password = '';      
+$password = 'root';      
 $database = 'railway';
 
 $conn = mysqli_connect($host, $username, $password, $database);

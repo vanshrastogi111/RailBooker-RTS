@@ -1,0 +1,29 @@
+iapiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: railbooker-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: railbooker-web
+  template:
+    metadata:
+      labels:
+        app: railbooker-web
+    spec:
+      containers:
+      - name: web
+        image: vanshrastogi111/railbooker-rts-web:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: DB_HOST
+          value: "railbooker-db"
+        - name: DB_USER
+          value: "root"
+        - name: DB_PASSWORD
+          value: "root"
+        - name: DB_NAME
+          value: "railway"
+

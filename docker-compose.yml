@@ -1,0 +1,30 @@
+services:
+  web:
+    build: ./docker/apache-php
+    container_name: railbooker-web
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    volumes:
+      - .:/var/www/html
+    networks:
+      - railnet
+
+  db:
+    build: ./docker/mysql
+    container_name: railbooker-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: railway
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - railnet
+
+volumes:
+  dbdata:
+
+networks:
+  railnet:
+
